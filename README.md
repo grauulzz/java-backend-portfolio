@@ -25,7 +25,7 @@ There is also one sprint project left off this list because it focused more on t
 > - Handled optional values in a relational database 
 > - Optimized network I/O performance with concurrent processing 
 > - Effectively passed functionality throughout the application using functional programming techniques 
-> - Designed a nifty [console logger class](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/future/FutureMonitor.java#L20) to keep track of various future objects stages and execution times
+> - Designed a nifty [console logger]([https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/future/FutureMonitor.java#L20](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/future/FutureUtils.java#L64)) to keep track of various future objects stages and execution times
 > - Followed thread safety best practices 
 
 ---
