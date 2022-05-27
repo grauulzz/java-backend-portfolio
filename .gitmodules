@@ -4,3 +4,6 @@
 [submodule "advertising-predicate-evaluator"]
 	path = advertising-predicate-evaluator
 	url = https://github.com/grauulzz/advertising-predicate-evaluator.git
+[submodule "kindle-publishing-service"]
+	path = kindle-publishing-service
+	url = https://github.com/grauulzz/kindle-publishing-service.git
