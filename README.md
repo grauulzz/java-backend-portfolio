@@ -41,7 +41,7 @@ There is also one sprint project left off this list because it focused more on t
 > - Implemented web layer using Spring MVC
 > - Integrated [redirection and forwarding of API calls](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/controllers/Controller.java#L47-L88) with Spring MVC controllers 
 > - Scraped HTTP endpoint metrics with Micrometer and Prometheus
-> - Setup I/O performance monitoring with Micrometer and Prometheus 
+> - Setup network I/O performance monitoring with Micrometer and Prometheus 
 > - Handled concurrent HTTP requests using Java CompletableFuture Objects, Stacks, and Queues
 >
 
