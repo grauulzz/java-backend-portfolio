@@ -1,3 +1,6 @@
 [submodule "music-playlist-api"]
 	path = music-playlist-api
 	url = https://github.com/grauulzz/music-playlist-api.git
+[submodule "advertising-predicate-evaluator"]
+	path = advertising-predicate-evaluator
+	url = https://github.com/grauulzz/advertising-predicate-evaluator.git
