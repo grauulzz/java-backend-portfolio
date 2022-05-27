@@ -19,6 +19,7 @@ There is also one sprint project left off this list because it focused more on t
 > - Gained experience handling big data concurrently
 > - Implemented asynchronous handling of request and response objects
 > - Provided a way to query one database while waiting on data from another
+> - (Composed future object chaining)[https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/future/FutureUtils.java#L49]
 > - Worked with dependency injection at a large scale with Google Dagger
 > - Ensured proper communications between multiple data access objects
 > - Assembled complex database queries from incoming request objects
