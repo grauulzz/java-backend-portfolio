@@ -47,7 +47,7 @@ There is also one sprint project left off this list because it focused more on t
 
 ---
 
-> ## [Music Playlist Api](https://github.com/grauulzz/music-playlist-api) 
+> ## [Music Playlist API](https://github.com/grauulzz/music-playlist-api) 
 > Description:
 >
 > Created an API with GET, POST, DELETE, and UPDATE functionality. The Application also integrates with AWS DynamoDB for storage of user's data. 
