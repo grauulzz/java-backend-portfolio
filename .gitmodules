@@ -10,3 +10,6 @@
 [submodule "promise-fulfillment-client"]
 	path = promise-fulfillment-client
 	url = https://github.com/grauulzz/promise-fulfillment-client.git
+[submodule "sustainable-shipping-service"]
+	path = sustainable-shipping-service
+	url = https://github.com/grauulzz/sustainable-shipping-service.git
