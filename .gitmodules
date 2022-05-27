@@ -1,0 +1,3 @@
+[submodule "music-playlist-api"]
+	path = music-playlist-api
+	url = https://github.com/grauulzz/music-playlist-api.git
