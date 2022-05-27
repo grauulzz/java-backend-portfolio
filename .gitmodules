@@ -7,3 +7,6 @@
 [submodule "kindle-publishing-service"]
 	path = kindle-publishing-service
 	url = https://github.com/grauulzz/kindle-publishing-service.git
+[submodule "promise-fulfillment-client"]
+	path = promise-fulfillment-client
+	url = https://github.com/grauulzz/promise-fulfillment-client.git
