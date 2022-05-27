@@ -14,7 +14,7 @@ There is also one sprint project left off this list because it focused more on t
 > ## [Advertising Predicate Evaluator](https://github.com/grauulzz/advertising-predicate-evaluator)
 > Description: 
 >
-> Designed backend architecture that can select an ad for a given user profile based off which targeting group the user belongs to. This was accomplished by evaluating a list of user targeting predicates against a group of targetable users and then sorting the results by click-through rate. All the data required to execute this correctly can end up being very large. With this in mind, the service was designed to be scalable and performant, with the ability to process the predicates in parallel. The service also provides a way to efficiently query one database while waiting on necessary data from another. This functionality was implemented with Java CompletableFuture objects.
+> Designed backend architecture that can select an ad for a given user profile based off which targeting group the user belongs to. This was accomplished by evaluating a list of user targeting predicates against a group of targetable users and then sorting the results by click-through rate. All the data required to execute this correctly can end up being very large. With this in mind, the service was designed to be scalable and performant, with the ability to process the predicates in parallel. If necessary, the service can wait for response data to finish processing elsewhere before returning a fully complete response object (advertisment). This functionality was implemented with Java CompletableFuture objects.
 >
 > - Gained experience handling big data concurrently
 > - Implemented asynchronous handling of request and response objects
