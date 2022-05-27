@@ -21,7 +21,6 @@ There is also one sprint project left off this list because it focused more on t
 > - [Composed future object chaining](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/future/FutureUtils.java#L49)
 > - Worked with dependency injection at a large scale with Google Dagger
 > - Ensured proper communications between multiple data access objects
-> - Assembled complex database queries from incoming request objects
 > - Handled optional values in a relational database 
 > - Optimized network I/O performance with concurrent processing 
 > - Effectively passed functionality throughout the application using functional programming techniques 
@@ -38,6 +37,7 @@ There is also one sprint project left off this list because it focused more on t
 > - Distributed HTTP requests with an Application Load Balancer using AWS EC2
 > - Integrated Docker with AWS EC2 and configured the service to run a container for each instance needed by the load balancer
 > - Routed incoming requests to the Load Balancer using AWS API Gateway
+> - Assembled complex database queries from incoming request objects
 > - Implemented web layer using Spring MVC
 > - Integrated redirection and forwarding of API calls with Spring MVC controllers 
 > - Scraped HTTP endpoint metrics with Micrometer and Prometheus
