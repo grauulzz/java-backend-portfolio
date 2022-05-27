@@ -1,13 +1,13 @@
 # Java Backend Portfolio
 
 ## About
-This repository is a consolidation of all monthly sprint assignments I completed over nine months as a student at BloomTech.
+This repository is a consolidation of all monthly sprint project assignments I completed over nine months as a student at BloomTech.
 
 A high level description of each project is outlined below with links to the project's GitHub repository.
 
 The specific assignments for each project can be found in the sub-repository's README or DESIGN_DOC
 
-There is also one project left off this list because it is more of a frontend project. [The project's repository can be found here](https://github.com/Celtics-Engine/Celtics-Frontend)
+There is also one sprint project left off this list because it focused more on the frontend. [The project repository can be found here](https://github.com/Celtics-Engine/Celtics-Frontend)
 
 ---
 
