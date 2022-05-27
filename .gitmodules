@@ -13,3 +13,6 @@
 [submodule "sustainable-shipping-service"]
 	path = sustainable-shipping-service
 	url = https://github.com/grauulzz/sustainable-shipping-service.git
+[submodule "java-fundamentals-text-adventure"]
+	path = java-fundamentals-text-adventure
+	url = https://github.com/grauulzz/java-fundamentals-text-adventure.git
