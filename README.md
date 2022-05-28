@@ -33,15 +33,13 @@ There is also one sprint project left off this list because it focused more on t
 > Description:
 >
 > Implemented logic for a service that can publish a book to a Kindle account. The service accounts for both an Author account, and a User account. While using the database effectively, the service is able to handle multiple concurrent requests using a mix of load balancing and Java CompletableFuture Objects.
-> 
+
+> - Assembled [database queries from incoming request objects](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/activity/SubmitBookForPublishingActivity.java#L53-L82)
 > - Distributed HTTP requests with an Application Load Balancer using AWS EC2
 > - Integrated Docker with AWS EC2 and configured the service to run a container for each instance needed by the load balancer
 > - Routed incoming requests to the Load Balancer using AWS API Gateway
-> - Assembled complex database queries from incoming request objects
 > - Implemented [Spring RESTful controllers](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/controllers/Controller.java#L32) to convert the payload of incomming requests into an internal data structure 
-> - Integrated [redirection and forwarding of API calls](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/controllers/Controller.java#L47-L88) with Spring MVC controllers 
-> - Scraped HTTP endpoint metrics with Micrometer and Prometheus
-> - Setup network I/O performance monitoring with Micrometer and Prometheus 
+> - Integrated I/O [performance monitoring with Micrometer and Prometheus](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/controllers/Controller.java#L36-L47)
 > - [Preserved order of incomming HTTP request processing by implementing a Queue combind with Java CompletableFuture objects](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/publishing/BookPublishTask.java#L47-L93), while still 
 >
 
