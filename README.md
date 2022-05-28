@@ -87,7 +87,7 @@ There is also one sprint project left off this list because it focused more on t
 > - Handled communications between data access objects and business logic classes 
 > - Followed best practice Builder design patterns
 > - Implemented Comparator and Comparable Interfaces to sort order objects by comparable traits
-> - Learned when a collection should be mutable or immutable
+> - Learned conceptual use of mutability/immutability of collections and objects
 >
 
 ---
