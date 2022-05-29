@@ -41,7 +41,7 @@ There is also one sprint project left off this list because it focused more on t
 > - Routed HTTP requests using RESTful best practices
 > - Implemented [Spring RESTful controllers](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/controllers/Controller.java#L32) to convert the payload of incomming requests into an internal data structure 
 > - Integrated I/O [performance monitoring with Micrometer and Prometheus](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/controllers/Controller.java#L36-L47)
-> - [Preserved order of incomming HTTP request processing by implementing a Queue combind with Java CompletableFuture objects](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/publishing/BookPublishTask.java#L47-L93) 
+> - Preserved order of incomming [HTTP request processing](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/publishing/BookPublishTask.java#L47-L93) by implementing a Queue combind with Java CompletableFuture objects 
 >
 
 ---
@@ -52,11 +52,14 @@ There is also one sprint project left off this list because it focused more on t
 > Created an API with GET, POST, DELETE, and UPDATE functionality. The Application also integrates with AWS DynamoDB for storage of user's data. 
 >
 > - Gained experience programming a RESTful API from scratch
-> - Provided DynamoDB utilities for CRUD operations with AWS lambda functions
+> - Provided DynamoDB utilities for CRUD operations with [AWS lambda functions](https://github.com/grauulzz/music-playlist-api/blob/e8946e03ee26a985dad6701fc6fd37c397d55ccd/src/com/amazon/ata/music/playlist/service/lambda/AddSongToPlaylistActivityProvider.java#L13-L38) and dependecy injection
 > - Setup table structure and data model for DynamoDB 
-> - Worked extensively with DynamoDB range and hash key attributes
-> - Configured endpoints for playlist retrieval and creation
+> - Worked with unordered hash indexes in DynamoDB with range and hash primary key attributes
+> - Implemented [dependecy injection](https://github.com/grauulzz/music-playlist-api/blob/e8946e03ee26a985dad6701fc6fd37c397d55ccd/src/com/amazon/ata/music/playlist/service/dependency/DaoModule.java#L18) on a project from scratch
+> - Designed a song order Enum capable of defining [Comparator sorting functionality](https://github.com/grauulzz/music-playlist-api/blob/e8946e03ee26a985dad6701fc6fd37c397d55ccd/src/com/amazon/ata/music/playlist/service/models/SongOrder.java#L13-L61) from arguments passed in
+> - Configured AWS APIGateway endpoints for playlist retrieval and creation
 > - Wrote unit tests which required mocking the database
+> - Designed custom Exception classes for [handling invalid CRUD operations data](https://github.com/grauulzz/music-playlist-api/blob/e8946e03ee26a985dad6701fc6fd37c397d55ccd/src/com/amazon/ata/music/playlist/service/exceptions/PlaylistNotFoundException.java#L6-L45) and invalid [DynamoDB data input](https://github.com/grauulzz/music-playlist-api/blob/e8946e03ee26a985dad6701fc6fd37c397d55ccd/src/com/amazon/ata/music/playlist/service/exceptions/AlbumTrackNotFoundException.java#L7-L46)
 >
 
 ---
@@ -64,13 +67,13 @@ There is also one sprint project left off this list because it focused more on t
 > ## [Sustainable Shipping Service](https://github.com/grauulzz/sustainable-shipping-service)
 > Description:
 >
-> Implemented a service that can calculate the cost of a shipment based on the weight of the shipment and the material used for packaging the shipment. The finished product provides modular shipment recommendations to the shipping fulfillment center.
+> Implemented a service that can calculate the cost of a shipment based on the weight of the shipment and the material used for packaging the shipment. The finished project [provides modular shipment recommendations](https://github.com/grauulzz/sustainable-shipping-service/blob/cc9adacbd7672a257207156ab86d3110af9b6ae5/src/com/amazon/ata/service/ShipmentService.java#L47-L79) to a shipment fulfillment center.
 >
-> - Gained experience implementing essential data structures
+> - Gained experience [implementing essential data structures](https://github.com/grauulzz/sustainable-shipping-service/blob/cc9adacbd7672a257207156ab86d3110af9b6ae5/src/com/amazon/ata/dao/PackagingDAO.java#L28-L78) 
 > - Worked with hash table buckets and object hashing to efficiently store and retrieve data
 > - Implemented hash functions and hash table collision resolution
-> - Created data structures for shipment cost calculations that could implement common functionality in a modular way (calculations of different materials)
-> - Structured Java class Inheritance and hierarchy 
+> - Created an [Interface for shipment cost calculations](https://github.com/grauulzz/sustainable-shipping-service/blob/cc9adacbd7672a257207156ab86d3110af9b6ae5/src/com/amazon/ata/cost/CarbonCostStrategy.java#L12-L35) that provides calculations of the cost of different materials
+> - Structured Java class [Inheritance and hierarchy](https://github.com/grauulzz/sustainable-shipping-service/blob/cc9adacbd7672a257207156ab86d3110af9b6ae5/src/com/amazon/ata/types/Box.java#L7-L78) 
 > - Learned how to preserve an object's internal state while exposing only what's necessary
 > - Created custom Exception classes for specific error conditions
 > - Used interface and abstract class design patterns to properly structure java classes  
@@ -81,11 +84,11 @@ There is also one sprint project left off this list because it focused more on t
 > ## [Promise Fulfillment Client](https://github.com/grauulzz/promise-fulfillment-client)
 > Description:
 >
-> Implemented a service that can fulfill orders for a customer and communicate it through a "promise" back to the client (in this case the client was a call center CLI). This was one of the first projects in the course, and was a great opportunity to learn about how a backend can maintain a high level of abstraction between servers and clients.
+> Implemented a service that can fulfill orders for a customer and communicate it through a "promise" back to the client (in this case the client was a call center command line interface). This was one of the first projects in the course and was a great opportunity to learn about how a backend can maintain a high level of abstraction between servers and clients.
 > - Worked extensively with java Collections and iterating over them
 > - Handled communications between data access objects and business logic classes 
-> - Followed best practice Builder design patterns
-> - Implemented Comparator and Comparable Interfaces to sort order objects by comparable traits
+> - Followed best practice [Builder design patterns](https://github.com/grauulzz/promise-fulfillment-client/blob/40cd7f79509b4a6a2a74fa0a83039d5f09038efa/src/com/amazon/ata/deliveringonourpromise/deliverypromiseservice/DeliveryPromiseServiceClient.java#L31-L48)
+> - Implemented [Comparator Interface](https://github.com/grauulzz/promise-fulfillment-client/blob/40cd7f79509b4a6a2a74fa0a83039d5f09038efa/src/com/amazon/ata/deliveringonourpromise/comparators/PromiseAsinComparator.java#L11-L22) to sort order objects by comparable traits
 > - Learned conceptual use of mutability/immutability of collections and objects
 >
 
