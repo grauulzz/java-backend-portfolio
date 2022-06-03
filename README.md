@@ -7,7 +7,7 @@ A high level description of each project is outlined below with links to the pro
 
 The specific assignments for each project can be found in the sub-repository's README or DESIGN_DOC
 
-There is also one sprint project left off this list because it focused more on the frontend. [The project repository can be found here](https://github.com/Celtics-Engine/Celtics-Frontend)
+There is also one sprint project left off this list because it focused more on the frontend. [The project repository can be found here](https://github.com/grauulzz/celtics-engine-frontend-team-project)
 
 ---
 
