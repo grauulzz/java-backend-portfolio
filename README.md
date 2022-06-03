@@ -67,7 +67,7 @@ There is also one sprint project left off this list because it focused more on t
 > ## [Sustainable Shipping Service](https://github.com/grauulzz/sustainable-shipping-service)
 > Description:
 >
-> Implemented a service that can calculate the cost of a shipment based on the weight of the shipment and the material used for packaging the shipment. The finished project [provides modular shipment recommendations](https://github.com/grauulzz/sustainable-shipping-service/blob/cc9adacbd7672a257207156ab86d3110af9b6ae5/src/com/amazon/ata/service/ShipmentService.java#L47-L79) to a shipment fulfillment center.
+> Implemented a service that can calculate the cost of a shipment based on the weight of the item and the material used for packaging the shipment. The finished project [provides modular shipment recommendations](https://github.com/grauulzz/sustainable-shipping-service/blob/cc9adacbd7672a257207156ab86d3110af9b6ae5/src/com/amazon/ata/service/ShipmentService.java#L47-L79) to a shipment fulfillment center.
 >
 > - Gained experience [implementing essential data structures](https://github.com/grauulzz/sustainable-shipping-service/blob/cc9adacbd7672a257207156ab86d3110af9b6ae5/src/com/amazon/ata/dao/PackagingDAO.java#L28-L78) 
 > - Worked with hash table buckets and object hashing to efficiently store and retrieve data
