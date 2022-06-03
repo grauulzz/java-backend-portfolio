@@ -32,7 +32,7 @@ There is also one sprint project left off this list because it focused more on t
 > ## [Kindle Publishing Service](https://github.com/grauulzz/kindle-publishing-service) 
 > Description:
 >
-> Implemented logic for a service that can publish a book to a Kindle account. The service accounts for both an Author account, and a User account. Integrated with DyanmoDB, the service is designed to be scalable, with ability to process a [queue of publishing requests](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/publishing/BookPublishingManager.java#L8-L44)
+> Implemented logic for a service that can publish a book to a Kindle account. The service accounts for both an Author account, and a User account. Integrated with DyanmoDB, the service is designed to be scalable, with ability to process a queue of publishing requests
 >
 > - Assembled [DynamoDB queries from incoming request objects](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/activity/SubmitBookForPublishingActivity.java#L53-L82)
 > - Distributed HTTP requests with an Application Load Balancer using AWS EC2
@@ -40,7 +40,7 @@ There is also one sprint project left off this list because it focused more on t
 > - Setup the service to run the Docker container for each instance needed by the Load Balancer
 > - Routed HTTP requests using RESTful best practices
 > - Implemented [Spring RESTful controllers](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/controllers/Controller.java#L32) to convert the payload of incomming requests into an internal data structure 
-> - Integrated I/O [performance monitoring with Micrometer and Prometheus](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/controllers/Controller.java#L36-L47)
+> - Integrated I/O performance monitoring with Micrometer and Prometheus
 > - Preserved order of incomming [HTTP request processing](https://github.com/grauulzz/kindle-publishing-service/blob/3e738c21bc4b11d13e42cc527f0e67632a500c28/src/com/amazon/ata/kindlepublishingservice/publishing/BookPublishTask.java#L47-L93) by implementing a Queue combind with Java CompletableFuture objects 
 >
 
