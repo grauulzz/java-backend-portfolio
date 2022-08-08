@@ -14,18 +14,16 @@ There is also one sprint project left off this list because it focused more on t
 > ## [Advertising Predicate Evaluator](https://github.com/grauulzz/advertising-predicate-evaluator)
 > Description: 
 >
-> Designed backend architecture that can select an ad for a given user profile based off which targeting group the user belongs to. [Generating the advertisement](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/businesslogic/AdvertisementSelectionLogic.java#L80-L97) is accomplished by evaluating a list of user targeting predicates against a group of targetable users and then [sorting the results by click-through rate](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/businesslogic/AdvertisementSelectionLogic.java#L45-L51). All the data required to execute this correctly can end up being very large. With this in mind, the service was designed to be scalable and performant, with the ability to [process the predicates in parallel](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/targeting/TargetingEvaluator.java#L24-L35). If necessary, the service can wait for [response data to finish processing](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/activity/GenerateAdActivity.java#L44-L56) elsewhere before returning a generated ad. This functionality was implemented with Java CompletableFuture objects.
+> Designed backend architecture that can select an ad for a given user profile based off which targeting group the user belongs to. [Generating the advertisement](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/businesslogic/AdvertisementSelectionLogic.java#L80-L97) is accomplished by evaluating a list of user targeting predicates against a group of targetable users and then [sorting the results by click-through rate](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/businesslogic/AdvertisementSelectionLogic.java#L45-L51). The service has the ability to [process the predicates in parallel](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/targeting/TargetingEvaluator.java#L24-L35). If necessary, the service can wait for [response data to finish processing](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/activity/GenerateAdActivity.java#L44-L56) before returning a generated ad.
 >
 > - Gained experience handling big data concurrently
-> - Implemented asynchronous handling of request and response objects
+> - Implemented asynchronous request and response objects
 > - [Composed future object chaining](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/future/FutureUtils.java#L49-L56)
 > - Worked with dependency injection at a large scale with Google Dagger
 > - Ensured proper communications between multiple data access objects
 > - Handled optional values in a relational database 
 > - Optimized network I/O performance with concurrent processing 
-> - Effectively passed functionality throughout the application using functional programming techniques 
 > - Designed a nifty [console logger](https://github.com/grauulzz/advertising-predicate-evaluator/blob/f91d927fd28b98daf0a15633fac92b733453eabb/src/com/amazon/ata/advertising/service/future/FutureUtils.java#L64) to keep track of various future objects stages and execution times
-> - Followed thread safety best practices 
 
 ---
 
