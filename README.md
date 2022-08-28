@@ -57,8 +57,6 @@ There is also one sprint project left off this list because it focused more on t
 > - Designed a song order Enum capable of defining [Comparator sorting functionality](https://github.com/grauulzz/music-playlist-api/blob/e8946e03ee26a985dad6701fc6fd37c397d55ccd/src/com/amazon/ata/music/playlist/service/models/SongOrder.java#L13-L61) from arguments passed in
 > - Configured AWS APIGateway endpoints for playlist retrieval and creation
 > - Wrote unit tests which required mocking the database
-> - Designed custom Exception classes for [handling invalid CRUD operations data](https://github.com/grauulzz/music-playlist-api/blob/e8946e03ee26a985dad6701fc6fd37c397d55ccd/src/com/amazon/ata/music/playlist/service/exceptions/PlaylistNotFoundException.java#L6-L45) and invalid [DynamoDB data input](https://github.com/grauulzz/music-playlist-api/blob/e8946e03ee26a985dad6701fc6fd37c397d55ccd/src/com/amazon/ata/music/playlist/service/exceptions/AlbumTrackNotFoundException.java#L7-L46)
->
 
 ---
 
